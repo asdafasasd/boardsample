@@ -1,5 +1,13 @@
 package com.test.dao;
 
-public class BoardDao {
+import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
+import com.test.vo.Board;
+
+@Repository
+public interface BoardDao {
+	List<Board> ListAll();
+	List<Board> SelectBoardList();
 }

@@ -1,5 +1,10 @@
 package com.test.service;
 
-public class BoardService {
+import java.util.List;
 
+import com.test.vo.Board;
+
+public interface BoardService {
+	List<Board> ListAll();
+	List<Board> SelectBoardList();
 }
